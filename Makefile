@@ -7,13 +7,13 @@ prerequisites:
 		.
 
 	docker build \
-		--tag ghcr.io/bouncmpe/whisper 
+		--tag ghcr.io/bouncmpe/whisper \
 		--file docker/whisper.dockerfile \
 		.
 
 build:
 	docker build \
-		--tag ghcr.io/bouncmpe/labs344:latest \
+		--tag bouncmpe/labs344:latest \
 		.
 
 run:

@@ -7,7 +7,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     libboost-all-dev \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* 
 
-RUN git clone --depth=1 https://github.com/chipsalliance/SweRV-ISS
+RUN git clone --depth=1  https://github.com/MMDF/SweRV-ISS 
 
 RUN cd /SweRV-ISS \
     && make -j$(nproc) BOOST_DIR=/usr/include/boost 
